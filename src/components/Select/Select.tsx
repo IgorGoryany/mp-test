@@ -9,7 +9,9 @@ interface SelectProps<T>
   children: (item: T) => ReactNode;
   icon?: ReactNode;
 }
-const Select = <T extends Record<keyof T, unknown>>(props: SelectProps<T>) => {
+export const Select = <T extends Record<keyof T, unknown>>(
+  props: SelectProps<T>,
+) => {
   const { items, children, label, className, icon, ...otherProps } = props;
   const id = useId();
   return (
@@ -24,5 +26,3 @@ const Select = <T extends Record<keyof T, unknown>>(props: SelectProps<T>) => {
     </label>
   );
 };
-
-export default Select;

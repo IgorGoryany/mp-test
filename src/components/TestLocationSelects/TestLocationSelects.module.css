@@ -1,0 +1,13 @@
+.selects {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.servers {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 200px;
+}
